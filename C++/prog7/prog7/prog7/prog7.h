@@ -40,8 +40,9 @@ void funcvoid2()
 
 int main()
 {
+	int x = func1();
 	cout << "Function 1" << endl;
-	cout << func1() << endl;
+	cout << x << endl;
 	cout << "\nFunction 2" << endl;
 	cout << func2() << endl;\
 	cout << "\nFunction 3" << endl;
