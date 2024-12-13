@@ -15,6 +15,21 @@ bool isPrime(int n) {
 int main() {
     int n = 0;
     int a = 0;
+    int num;
+
+    cout << "input a number: ";
+    cin >> num;
+    cin.ignore();
+
+    
+    if (isPrime(num) == true)
+        cout << num << " is prime" << endl;
+    else
+        cout << num << " is not prime";
+
+    cout << "hit enter to print first 100" << endl;
+    cin.get();
+
 
     while (n < 100) {
         if (isPrime(a) == true) {

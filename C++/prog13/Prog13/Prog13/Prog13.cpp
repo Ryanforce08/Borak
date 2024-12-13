@@ -13,52 +13,72 @@ int main() {
 	int num2 = 15;
 	int num3 = 7;
 
-	//returns lenth of string
+	//returns amount of chars stored in the string X
+	//return type is int
+	cout << "length;";
 	cout << s2.length() << endl;
+	
 
-	//returns the letter at the num in the string
+	//returns the chars at the num in the string
+	//return type is char
+	cout << "at;";
 	cout << s1.at(num1) << endl;
 
-	//return the mumber of chars untill set letter
+	//return the number of chars until set char
+	//return type is int
+	cout << "find;";
 	cout << s1.find(s4) << endl;
 
-	//returns the second a 
+	//returns the number of chars till the substring after the set number of var with int in it  X
+	//return type is int
+	cout << "find;";
 	cout << s1.find(s4, num2) << endl;
 
-	//returns if it is diffrent
-	cout << s2.compare(s3) << endl;
+	//checks the amount of chars in s2 to s4 then returns 0 if its the same, 1 if greater and -1 if less X
+	//return type is int
+	cout << "compare;";
+	cout << s2.compare(s4) << endl;
 
-	//returns if it is diffrent
 	cout << s3.compare(s2) << endl;
 
-	//reurns bool if empty
+	//Checks if there is something in the sring then returns true if there is nothing and false if there is something 
+	//return type is bool
+	cout << "empty;";
 	cout << s5.empty() << endl;
 
-	//reurns bool if empty
 	cout << s1.empty() << endl;
 
-	//returns sting with 2 letters missing
+	//returns the sentence with only the letters showing in between the 2 nums
+	//return type is string
+	cout << "substr;";
 	cout << s1.substr(num1, num2) << endl;
 
-	//retuns string
 	cout << s1 << endl;
 
 	//swaps string 2 and 3
+	//return type is void
+	cout << "swap;";
 	s2.swap(s3);
 	cout << s2 << endl;
 
 	cout << s3 << endl;
 
-	//sets first letter as Q
+	//sets first char as the var c1 for example 
+	//return type is char
+	cout << "front;";
 	s1.front() = c1;
 	cout << s1 << endl;
 
-	//sets last lttr as Z
+	//sets last char as c2 for example 
+	//return type is char
+	cout << "back;";
 	s1.back() = c2;
 
 	cout << s1 << endl;
 
-
+	//removes chars in between the 2 nums
+	//return type is string
+	cout << "erase;";
 	cout << s1.erase(num3, num1) << endl;
 
 	cout << "\n\n\n\n";
@@ -70,6 +90,9 @@ int main() {
 
 	string str = base;
 	cout << str << endl;
+	cout << "replace;";
+	//replacs the chars in betwee the nums with the set new string
+	//return type is string
 	str.replace(9, 5, str2); // 3 parameters
 	cout << str << endl;
 	str.replace(19, 6, str3, 7, 6); // 5 parameters
