@@ -13,7 +13,7 @@ int main() {
 	int num2 = 15;
 	int num3 = 7;
 
-	//returns amount of chars stored in the string X
+	// Returns the number of characters stored in the string
 	//return type is int
 	cout << "length;";
 	cout << s2.length() << endl;
@@ -29,12 +29,13 @@ int main() {
 	cout << "find;";
 	cout << s1.find(s4) << endl;
 
-	//returns the number of chars till the substring after the set number of var with int in it  X
+	// Searches for the first occurrence of substring s4 (a) in s1 starting from num2 (15) X
 	//return type is int
 	cout << "find;";
 	cout << s1.find(s4, num2) << endl;
 
-	//checks the amount of chars in s2 to s4 then returns 0 if its the same, 1 if greater and -1 if less X
+	//Compares the strings s2 (Hello) and s4 ("a") and returns an integer:
+	// 0 if they are equal, a negative value if 's2' is less, or a positive value if 's2' is greater. X
 	//return type is int
 	cout << "compare;";
 	cout << s2.compare(s4) << endl;
