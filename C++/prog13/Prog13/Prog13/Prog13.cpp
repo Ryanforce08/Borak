@@ -7,6 +7,9 @@ int main() {
 	string s3 = "World";
 	string s4 = "a";
 	string s5 = "";
+	string s6 = "cat";
+	string s7 = "apple";
+	string s8 = "banana";
 	char c1 = 'Q';
 	char c2 = 'Z';
 	int num1 = 2;
@@ -29,22 +32,34 @@ int main() {
 	cout << "find;";
 	cout << s1.find(s4) << endl;
 
-	// Searches for the first occurrence of substring s4 (a) in s1 starting from num2 (15) X
+	//Searches for the first occurrence of substring s4 (a) in string s1 starting from num2 (15) 
 	//return type is int
 	cout << "find;";
 	cout << s1.find(s4, num2) << endl;
 
-	//Compares the strings s2 (Hello) and s4 ("a") and returns an integer:
-	// 0 if they are equal, a negative value if 's2' is less, or a positive value if 's2' is greater. X
+	//Compares the strings starting char to the alpabet for example if s7 starts with 'a' it will be greater than s8 which begins with 'b' so it will return a negitive int:
+	//it returns 0 if they are equal place in the alphabet, a negative value if its being compared to a lower place, or a positive value if its in a higher place. 
 	//return type is int
-	cout << "compare;";
-	cout << s2.compare(s4) << endl;
+	cout << "\n\ncompare;";
+	cout << "string s6 = cat string s7 = apple string s8 = banana" << endl;
+	cout << "s6" << endl;
+	cout << s6.compare(s7) << endl;
 
-	cout << s3.compare(s2) << endl;
+	cout << s6.compare(s8) << endl;
+	cout << "s7" << endl;
+	cout << s7.compare(s6) << endl;
+
+	cout << s7.compare(s8) << endl;
+	cout << "s8" << endl;
+	cout << s8.compare(s6) << endl;
+
+	cout << s8.compare(s7) << endl;
+
+	cout << s8.compare(s8) << endl;
 
 	//Checks if there is something in the sring then returns true if there is nothing and false if there is something 
 	//return type is bool
-	cout << "empty;";
+	cout << "\n\nempty;";
 	cout << s5.empty() << endl;
 
 	cout << s1.empty() << endl;
