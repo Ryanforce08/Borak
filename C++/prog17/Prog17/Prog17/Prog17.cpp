@@ -32,7 +32,6 @@ int main() {
 		arr[i] = rand() % (100 - 200 + 1) + 1;
 	}
 	printIntArr(arr, sizeof(arr) / sizeof(int));
-	//move data to flash drive!!!!!
 	cin.get();
 	return 0;
 }
