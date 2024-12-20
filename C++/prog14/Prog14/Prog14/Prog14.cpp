@@ -89,7 +89,13 @@ void printStringArr(string a[], int length)
 int main() {
 	int arr[] = { 4, 3, 2, 1, 2, 3, 4, 5, 6, 7, 8, 9, 2, 3, 4, 5, 6, 7, 8, 9, 3, 2, 1, 5, 6, 9, 3, 1, -3, 2, 6, 8, 2, 3, 6, 1, 7 };
 	bool arr2[] = { true, false, true, true, true, false, false, true, false, true, true, false, false, true, true, true, false };
-	double arr3[] = { 1.3, 2.1, -7.3, 8.4, 10.1, -8.2 };
+	double arr3[6];
+	arr3[0] = 1.3;
+	arr3[1] =  2.1 ;
+	arr3[2] = -7.3 ;
+	arr3[3] =  8.4 ;
+	arr3[4] =  10.1 ;
+	arr3[5] =  -8.2 ;
 	string arr4[] = { "apple", "banana", "cat", "dog", "evergreen", "function", "giraffe", "hogwash", "igloo", "jump", "kite", "llama", "mushroom", 
 					  "nested", "opaque", "push", "quarry", "roadrunner", "staple", "tenant", "under", "vertigo", "walker", "xylophone", "yellow", "zebra" };
 	
@@ -112,12 +118,6 @@ int main() {
 	printBoolArr(arr2, arr2length);
 	cout << "\n";
 
-	cout << arr3[0] << endl;
-	cout << arr3[1] << endl;
-	cout << arr3[2] << endl;
-	cout << arr3[3] << endl;
-	cout << arr3[4] << endl;
-	cout << arr3[5] << endl;
 	cout << arr3[2] << "\n";
 	printDoubleArr(arr3, arr3length);
 	cout << "\n";

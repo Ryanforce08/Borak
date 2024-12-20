@@ -36,19 +36,21 @@ void printIntArr(int a[], int length)
 int main() {
     int arr1[1000];
     int a = 0;
-    int n = 1;
+    int n = 0;
+    int arrlength = sizeof(arr1) / sizeof(int);
 
 
 
     while (n < 1000) {
         if (isPrime(a) == true) {
-            n += 1;
             arr1[n] = a;
+            n += 1;
         }
         a += 1;
     }
     
-    printIntArr(arr1, 1000);
+    printIntArr(arr1, arrlength);
+    cout << "250th: " << arr1[249] << "\n500th: " << arr1[499] << "\n750th: " << arr1[749] << "\n1000th: " << arr1[999] << endl;
 
     cin.get();
     return 0;
