@@ -56,8 +56,9 @@ int main() {
 	bubbleSort(arr, size);
 	printIntArr(arr, size);
 
-	cout << "mean: " << a << "/" << size << "=" << a / size << endl;
-	cout << "mean: " << a << "/" << size << "=" << a / size << endl;
+	cout << "Mean: " << a << " / " << size << " = " << a / size << endl;
+	cout << "Range: " << arr[size - 1] - arr[0] << endl;
+	cout << "Median: " << arr[size/2] << " + " << arr[(size/2) - 1] << " = " << (arr[size/2] + arr[(size/2) - 1])/2;
 	cin.get();
 	return 0;
 }
