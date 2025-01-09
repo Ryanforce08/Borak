@@ -64,7 +64,7 @@ int main() {
 
 	cout << s1.empty() << endl;
 
-	//returns the sentence with only the letters showing in between the 2 nums
+	//returns the substrin starting at num one with num 2 being the amount of chars
 	//return type is string
 	cout << "substr;";
 	cout << s1.substr(num1, num2) << endl;

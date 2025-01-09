@@ -27,20 +27,20 @@ int main() {
 	srand(time(NULL));
 	int arr[1000];
 	
-	double a = 0;
+	double sum = 0;
 	int size = sizeof(arr) / sizeof(int);
 
-	for (int i = 0; i <= 999; ++i) {
+	for (int i = 0; i < size; ++i) {
 		
 		arr[i] = rand() % 101 + 100;
 	}
-	for (int i = 0; i < 999; ++i) {
-		a += arr[i];
+	for (int i = 0; i < size; ++i) {
+		sum += arr[i];
 	}
 	
-	printIntArr(arr, sizeof(arr) / sizeof(int));
+	printIntArr(arr, size);
 	
-	cout << "mean: " << a << "/" << size << "=" << a / size << endl;
+	cout << "mean: " << sum << "/" << size << "=" << sum / size << endl;
 	cin.get();
 	return 0;
 }
