@@ -43,22 +43,31 @@ int main() {
 	srand(time(NULL));
 	int arr[1000];
 
-	double a = 0;
+	double sum = 0;
 	int size = sizeof(arr) / sizeof(int);
+	double median;
 
-	for (int i = 0; i <= 999; ++i) {
+	for (int i = 0; i < size; ++i) {
 
-		arr[i] = rand() % 1001 + 1000;
+		arr[i] = rand() % (size + 1) + size;
 	}
-	for (int i = 0; i < 999; ++i) {
-		a += arr[i];
+	for (int i = 0; i < size; ++i) {
+		sum += arr[i];
 	}
 	bubbleSort(arr, size);
 	printIntArr(arr, size);
 
-	cout << "Mean: " << a << " / " << size << " = " << a / size << endl;
+	if (size % 2 == 0) {
+		median = arr[size / 2];
+	}
+	else {
+		median = (arr[size / 2] + arr[(size / 2) - 1]) / 2.0;
+	}
+
+
+	cout << "Mean: " << sum / size << endl;
 	cout << "Range: " << arr[size - 1] - arr[0] << endl;
-	cout << "Median: " << arr[size/2] << " + " << arr[(size/2) - 1] << " = " << (arr[size/2] + arr[(size/2) - 1])/2;
+	cout << "Median: " << median;
 	cin.get();
 	return 0;
 }

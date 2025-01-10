@@ -7,10 +7,11 @@ public class Java4 {
 		System.out.print("Please enter your age: ");
 		int age = s.nextInt();
 		System.out.print("Please enter your name: ");
+		@SuppressWarnings("unused")
 		String dummy = s.nextLine();
 		String name = s.nextLine();
 		System.out.println(name + " is " + age + " years old");
-
+		s.close();
 	}
-
+	
 }
