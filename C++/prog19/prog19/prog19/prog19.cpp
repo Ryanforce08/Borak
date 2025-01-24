@@ -29,7 +29,7 @@ void bubbleSort(string a[], int n)
 	{
 		for (int j = 0; j < n - i - 1; j++)
 		{
-			if (a[j].compare(a[j + 1]))
+			if (a[j].compare(a[j + 1]) > 0)
 			{
 				string swap = a[j];
 				a[j] = a[j + 1];
@@ -60,7 +60,7 @@ int main() {
 	double a = 0;
 	int size = sizeof(arr) / sizeof(string);
 
-	for (int i = 0; i <= 999; ++i) {
+	for (int i = 0; i < size; i++) {
 
 		arr[i] = getString();
 	}

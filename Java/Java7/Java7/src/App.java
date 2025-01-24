@@ -7,8 +7,11 @@ public class App {
         int year;
 
         Scanner s = new Scanner(System.in);
+        System.out.print("age: ");
         age = s.nextInt();
+        System.out.print("num: ");
         num = s.nextInt();
+        System.out.print("birth year: ");
         year = s.nextInt();
 
         if (age < 18){
