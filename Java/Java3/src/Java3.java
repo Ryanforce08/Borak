@@ -7,6 +7,7 @@ public class Java3 {
 		double doublevar = 3.14;
 		boolean booleanvar = true;
 		char charvar = 'e';
+		char numCharVar = 65;
 		float floatvar = 3.1f;
 		long longvar = 2;
 		short shortvar = 2;
@@ -21,6 +22,7 @@ public class Java3 {
 		System.out.println(longvar);
 		System.out.println(shortvar);
 		System.out.println(bytevar);
+		System.out.println(numCharVar);
 	}
 
 }
