@@ -40,7 +40,7 @@ public class Test {
 		 w = ++x % y--;
 
 		System.out.println( " x " + x + " y " + y + " z " + z + " w " + w );
-	}*/
+	}
 	public static void main( String[] args )
 	 {
 	 Scanner keyboard = new Scanner( System.in );
@@ -58,6 +58,16 @@ public class Test {
 	 System.out.print( "Your have entered: " );
 	 System.out.println(
 	 real + ", " + word1+ ", " + value + ", " + word2 );
-	 }
+	 }*/
+	
+	public static void main( String[] args ) {
+		for ( int i = 0; i < 10; i++){
+			for (int j = i; j > 0; j--) {
+				System.out.print(i);
+			}
+			System.out.println("");
+		}
+			 
+	}
 	}
 

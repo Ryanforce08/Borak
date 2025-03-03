@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Java9/src"/>
+	<classpathentry kind="src" path="Java9a/src"/>
+	<classpathentry kind="output" path="Java9/bin"/>
+</classpath>
