@@ -6,6 +6,10 @@ public class Java14 {
         
         double sum = 0.0;
         int totalCredits = 0;
+        int credits = 0;
+        double numGrade = 0.0;
+        String grade = "";
+        
         
         System.out.print("Please enter the number of classes: ");
         int numClasses = s.nextInt();
@@ -14,12 +18,12 @@ public class Java14 {
             System.out.println("Course " + i);
             
             System.out.print("How many credits? ");
-            int credits = s.nextInt();
+            credits = s.nextInt();
             
             System.out.print("Grade received: ");
-            String grade = s.next().toUpperCase(); 
+            grade = s.next().toUpperCase(); 
             
-            double numGrade = 0.0;      
+            numGrade = 0.0;      
             
             if (grade.equals("A")) {
                 numGrade = 4.0;
@@ -29,12 +33,9 @@ public class Java14 {
                 numGrade = 2.0;
             } else if (grade.equals("D")) {
                 numGrade = 1.0;
-            } else if (grade.equals("F")) {
-                numGrade = 0.0;
             } else {
-                System.out.println("Invalid grade entered.");
-                return;
-            }
+                numGrade = 0.0;
+            } 
             
             sum += credits * numGrade;
             totalCredits += credits;
