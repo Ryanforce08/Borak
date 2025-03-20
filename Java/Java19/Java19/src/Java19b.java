@@ -12,7 +12,7 @@ public class Java19b {
                 if (a.get(d) > a.get(d + 1)) /* For descending order use < */
                 {
                     swap = a.get(d);
-                    a.set(d, d + 1);
+                    a.set(d, a.get(d+1));
                     a.set(d+1, swap);
                 }
             } 

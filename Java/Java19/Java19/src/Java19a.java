@@ -17,7 +17,7 @@ public class Java19a {
 		int arr[] = new int[1000];
 		
 		for (int i = 0; i < arr.length; i++) {
-			arr[i] = (int) (Math.random() * 1001 - 1);
+			arr[i] = (int) (Math.random() * 1001);
 		}
 		insertionSort(arr);
 		System.out.println(Arrays.toString(arr));
