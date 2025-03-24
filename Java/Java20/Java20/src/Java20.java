@@ -14,26 +14,34 @@ public class Java20 {
 	   else
 	      return n * factorial (n - 1);
 	}
-	public static long req(int x, int y) {
+	public static long power(int x, int y) {
         if (y == 0) {
             return 1;
         }
-        return x * req(x, y - 1);
+        return x * power(x, y - 1);
     }
 	public static void main(String[] args) {
-		System.out.println("fibonacci");
+		System.out.print("fibonacci: [ ");
 		
 		for (int i = 0; i < 15 ;i++)
 			System.out.print(fibonacci(i) + " ");
+		System.out.println("]");
 		
-		System.out.println("\nfibonacci 21: " + fibonacci(21));
+		System.out.println("fibonacci 21: " + fibonacci(21));
 		
-		System.out.println("factorial");
+		System.out.print("factorial: [ ");
 		for (int i = 0; i < 10 ;i++)
 			System.out.print(factorial(i) + " ");
+		System.out.println("]");
 		
-		System.out.println(req(1,2));
-
+		for (int i = 0; i < 10; i++) {
+			for ( int j = 0; j < 10; j++) {
+				System.out.print(i + "^" + j + " = " + power(i,j) + ",\t");
+			}
+			System.out.println("");
+			
+		}
+		
 	}
 
 }
