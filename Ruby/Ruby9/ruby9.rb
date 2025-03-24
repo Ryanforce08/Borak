@@ -1,3 +1,5 @@
+load 'bubblesort.rb'
+
 arr = []
 
 for i in 0..1000
@@ -5,4 +7,19 @@ for i in 0..1000
 end 
 bubble_sort(arr)
 
-print arr.length
+length = arr.length
+sum = 0.0
+
+if length % 2 == 0
+puts "median: #{(arr[length / 2 - 1] + arr[length / 2]) / 2.0}"
+else
+puts "median: #{arr[length / 2]}"
+end
+
+for i in 0..length - 1
+    sum += arr[i]
+end
+
+puts "mean: #{sum/length}"
+puts "range: #{(arr[0] - arr[length -1]).abs}"
+    
