@@ -1,20 +1,30 @@
-print "guess a number 0-10: "
-input = gets.chomp.to_i
+
+input = 8
+num = 2
+inputstr = "b"
+
 if (input == 8)
-    print "Correct"
-elsif (input > 8)
-    print "To High"
-else
-    print "To low"
+    puts "Correct"
 end
-print "\nguess a letter: "
-inputstr = gets.chomp.to_s
-if (inputstr.eql? "b")
-    print "correct"
-elsif (inputstr.eql? "a")
-    print "close"
+
+if (input * num == 16)
+	puts "correct"
 else
-    print "wrong"
+    puts "wrong"
+end
+
+if (input * num == 16)
+	puts "correct"
+elsif (input * 3 == 32)
+    puts "close"
+else
+    puts "wrong"
+end
+
+unless (inputstr.eql? "b")
+    puts "correct"
+else
+    puts "wrong"
 end
 
     
