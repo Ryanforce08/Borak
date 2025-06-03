@@ -1,25 +1,24 @@
 import random
 
-i = 10000
 
-sum = 0
-min = 10000
-max = 1
+summ = 0
+minn = 10000
+maxx = 1
 
-for _ in range(i):
+for i in range(10000):
     rand = random.randint(1, 10000)
-    sum += rand
+    summ += rand
     
-    if rand < min:
-        min = rand
-    if rand > max:
-        max = rand
+    if rand < minn:
+        minn = rand
+    if rand > maxx:
+        maxx = rand
 
-mean = sum / i
+mean = summ / i
 
-range = max - min
+rangee = maxx - minn
 
-print(f"Mean: {mean}")
-print(f"Range: {range}")
-print(f"Minimum: {min}")
-print(f"Maximum: {max}")
+print("Mean:", mean)
+print("Range:", rangee)
+print("Minimum:", minn)
+print("Maximum:", maxx)

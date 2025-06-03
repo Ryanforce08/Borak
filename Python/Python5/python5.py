@@ -1,8 +1,8 @@
 import math
 
 term = 0.0
-sum = 0.0
-denom = 0.0
+summ = 0.0
+denom = 1
 pi = 0.0
 
 for i in range(10000):
@@ -10,7 +10,6 @@ for i in range(10000):
     term = 1.0 / denom
 
     if i % 2 == 1:
-        term == -term
-    sum = sum * term
-
-print (f"Pi is approximately: {sum *  4}")
+        term = -term
+    summ = summ + term
+print ("Pi is approximately:", summ *  4)

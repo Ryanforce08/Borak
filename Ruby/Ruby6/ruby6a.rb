@@ -6,6 +6,8 @@ puts s.strip
 
 puts s.index("llo")
 
+puts s.index("l",4)
+
 puts s[2, s.length]
 
 puts s[2..5]

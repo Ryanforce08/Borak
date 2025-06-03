@@ -1,12 +1,18 @@
-num = int(input("enter a number: "))
-year = int(input("enter a year: "))
-name = input("Name: ")
+num1 = int(input("enter a number: "))
+num2 = int(input("enter a number: "))
+str1 = str(input("enter a str: "))
 
-print(f"hello {name}, you are {year} years old and in {year+num} years you will be {year+num+num} years old")
-
-if num%2 == 0:
-    print("The number is even")
-elif num%2 != 0:
-    print("The number is odd")
+if num1 == 3:
+    print("num one correct")
+    
+if num2 == 3:
+    print("num two correct")
+else:
+    print("num two incorrect")
+    
+if num1 + num2 == 6:
+    print("sum is 6")
+elif str1 == "hello":
+    print("greetings")
 else:  
-    print("The number is not an integer")
+    print("not correct")

@@ -7,10 +7,10 @@ end
 def rand_num(front,back)
     length = (back - front).abs
     sum = 0
-    for i in 0..100
+    for i in 0...100
         sum += rand(length + 1) + front
     end
-    puts "Sum of rand num in range #{front} to #{back} is #{(sum / 100.0)}"
+    return (sum/100.0)
 end
 
 method1()
@@ -21,4 +21,5 @@ print "Enter a range of numbers (start and end): "
 front = gets.chomp.to_i
 back = gets.chomp.to_i
 
-rand_num(front,back)
+
+puts "Average of rand num in range #{front} to #{back} is #{rand_num(front,back)}"

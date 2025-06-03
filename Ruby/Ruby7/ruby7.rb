@@ -2,7 +2,7 @@ def isPrime(n)
     if n <= 1
         return false
     end
-    for i in 2..Math.sqrt(n).to_i
+    for i in 2...n
         if n % i == 0
             return false 
         end
@@ -11,6 +11,7 @@ def isPrime(n)
 end
 
 arr = []
+ar = Array.new
 i=2
 j=0
 while j <= 100
@@ -22,3 +23,4 @@ while j <= 100
 end
 
 print arr
+puts

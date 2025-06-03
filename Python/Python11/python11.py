@@ -1,4 +1,4 @@
-def recursive_search(arr, key, index=0):
+def recursive_search(arr, key, index = 0):
     if index >= len(arr):  
         return False
     if arr[index] == key:  
@@ -9,4 +9,4 @@ def recursive_search(arr, key, index=0):
 array = [2, 5, 7, 9, 1, 3]
 
 print(recursive_search(array, 8))
-print(recursive_search(array, 7))
+print(recursive_search(array, 3))

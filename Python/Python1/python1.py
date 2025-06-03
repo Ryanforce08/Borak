@@ -1,5 +1,7 @@
 print("hello world")
 
-age = 15
+age = 16
 
-print("i am", age, "years old")
+print("i", "am", age, "years", "old")
+print("i am " + str(age)+ " years old")
+print("i am %s years old" %(age))

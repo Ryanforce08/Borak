@@ -1,7 +1,10 @@
-input = gets.chomp.to_s 
+print "enter string: "
+input = gets.chomp
+a = input.split("o")
 
-str = "Hello World"
-a = []
-a = str.reverse().split("o")
+a.each do |x|
+  x.reverse!
+end
 
 print a
+puts

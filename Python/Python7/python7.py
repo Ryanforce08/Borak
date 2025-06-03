@@ -3,16 +3,17 @@ import random
 guesses = 0
 correct = False
 answer = random.randint(1,100)
-while not correct:
+while guesses < 7:
     guess = int(input("Guess number Between 1 and 100 inclusive: "))
     guesses += 1
     if guess == answer:
-        print("correct")
         correct = True
+        break
     elif guess < answer:
         print("Higher")
-    elif guess > answer:
-        print("lower")
     else:
-        print("invalid anwser")
-print(f"Won in {guesses} guesses")
+        print("lower")
+if correct:
+    print("Won in", guesses, "guesses")
+else:
+    print("You lose")
